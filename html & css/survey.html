@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+</head>
+
+<body>
+  <!--FreeCodeCamp test-->
+  
+  <form id="survey-form">
+    <h1 id="title">HOLIDAY PARTY RSVP</h1>
+    <p id="description">
+      We hope you can make it to the party!
+    </p>
+    <label id="name-label" for="name">Name: </label>
+    <input id="name" type="name" name="Your name:" required placeholder="Your name here" />
+    <br />
+    <label id="email-label" for="email">Your email: </label>
+    <input id="email" type="email" name="email" class="input-field" required placeholder="Enter your email" />
+    <label id="number-label" for="number">Number of Guests: </label>
+    <input id="number" type="number" min="1" max="100" class="input-field" required placeholder="No of Guests" />
+    <h3 id="band-h2" for="band">Will you attent?</h3>
+    <select id="dropdown" class="dropdown" required>
+      <option value="food">yes</option>
+      <option value="food">No</option>
+    </select>
+    <h3>What is your technical level of food?</h3>
+    <ul>
+      <li class="food safety and hygenic practices">
+        <label>
+          <input name="radio-buttons" value="food safety and hygenic practice" type="food" /> 
+        </label>
+      </li>
+      <li class="Allergern control">
+        <label>
+          <input name="radio-buttons" value="Allergern control" type="food" /> 
+        </label>
+      </li>
+      <li class="packaging technology">
+        <label>
+          <input name="radio-buttons" value="packaging technology" type="food" /></label>
+      </li>
+      <li class="sanitation and cleaning procedure">
+        <label>
+          <input name="radio-buttons" value="sanitation and cleaning procedure" type="food" />
+        </label>
+      </li>
+    </ul>
+    <div>
+      <h3>food styles you like:</h3>
+      <ul>
+        <div class="checkboxes">
+          <input type="checkbox" value="suchi" id="food" name="japan-style" />
+          <label for="food">suchi</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" value="rendang" id="food" name="japan-style" />
+          <label for="food">rendang</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" value="Tom yam Goong" id="food" name="thailand-style" />
+          <label for="food">Tom yam Goong</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" value="kebab" id="food" name="turkey-style" />
+          <label for="food">kebab</label>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" value="pecking duck" id="food" name="china-style" />
+          <label for="food">pecking duck</label>
+        </div>
+        
+      </ul>
+      <h2>Leave Your Comment:</h2>
+      <textarea placeholder="Enter your comments here..."></textarea>
+      <br />
+      <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
